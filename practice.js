@@ -43,9 +43,21 @@
 // const price = 500;
 // const isLeader = true;
 // price = isLeader === true ? 0 : price + 100;
-const isPassed = true;
-if (!isPassed) {
-  console.log('biya diya dimu');
-} else {
-  console.log('valo meye');
-}
+// const isPassed = true;
+// if (!isPassed) {
+//   console.log('biya diya dimu');
+// } else {
+//   console.log('valo meye');
+// }
+// const numbers = [
+//   12, 34, 56, 98, 9, 34, 677, 34, 23, 98, 45, 34, 13, 45, 56, 34, 65, 76, 87,
+//   788, 56,
+// ];
+// console.log(numbers[6]);
+// numbers.push(23, 89);
+// console.log(numbers);
+
+const number = [12, 45, 76, 98, 34, 56];
+number.shift();
+number.unshift(55);
+console.log(number);
