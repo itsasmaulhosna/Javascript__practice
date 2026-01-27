@@ -7,12 +7,21 @@ while (n < 60) {
   n++;
 }
 // 2
-// odd number
+odd number
 let i = 61;
 while (i <= 100) {
   console.log(i);
   i++;
   if (i % 2 !== 0) {
     console.log('odd number', i);
+  }
+}
+// even number
+let i = 78;
+while (i <= 98) {
+  console.log(i);
+  i++;
+  if (i % 2 === 0) {
+    console.log('even number', i);
   }
 }
