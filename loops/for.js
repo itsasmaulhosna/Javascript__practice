@@ -19,3 +19,24 @@ for (let i = 8; i <= 98; i++) {
     console.log('even number', i);
   }
 }
+// 3
+// sum of odd number
+let sum = 0;
+for (let i = 91; i <= 129; i++) {
+  console.log(i);
+  if (i % 2 !== 0) {
+    console.log('odd number', i);
+    sum = sum + i;
+  }
+}
+console.log('the sum is', sum);
+// sum of even number
+let total = 0;
+for (let i = 51; i <= 85; i++) {
+  console.log(i);
+  if (i % 2 === 0) {
+    console.log('even number', i);
+    total = total + i;
+  }
+}
+console.log('the total is', total);
