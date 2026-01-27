@@ -46,3 +46,7 @@ let n = 9;
 for (i = 1; i <= 10; i++) {
   console.log(9 * i);
 }
+// 5
+for (let i = 85; i >= 61; i--) {
+  console.log(i);
+}
