@@ -6,3 +6,13 @@ while (n < 60) {
   );
   n++;
 }
+// 2
+// odd number
+let i = 61;
+while (i <= 100) {
+  console.log(i);
+  i++;
+  if (i % 2 !== 0) {
+    console.log('odd number', i);
+  }
+}
