@@ -40,3 +40,9 @@ for (let i = 51; i <= 85; i++) {
   }
 }
 console.log('the total is', total);
+
+// 4
+let n = 9;
+for (i = 1; i <= 10; i++) {
+  console.log(9 * i);
+}
