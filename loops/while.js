@@ -26,9 +26,15 @@
 //   }
 // }
 // table
-let n = 5;
-let i = 1;
-while (i <= 10) {
-  console.log(n * i);
-  i++;
+// let n = 5;
+// let i = 1;
+// while (i <= 10) {
+//   console.log(n * i);
+//   i++;
+// }
+//countdown
+let i = 21;
+while (i >= 15) {
+  console.log(i);
+  i--;
 }
