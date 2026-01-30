@@ -16,3 +16,10 @@ while (sum < 100) {
   }
   console.log(sum);
 }
+// 3
+for (let i = 2; i <= 100; i++) {
+  if (i * i < 100) {
+    console.log(i * i);
+    break;
+  }
+}
