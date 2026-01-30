@@ -10,12 +10,18 @@
 // console.log(count);
 
 // 2
-let bd = 'Amader deasher name Bangladesh. Ami amr deshk onekk valobashi.';
-let count = 0;
-for (let i = 0; i < bd.length; i++) {
-  let letter = bd[i];
-  if (letter === 'A' || letter === 'a') {
-    count++;
+
+// 3
+let bd2 =
+  'Amader deasher name Bangladesh. Ami amr deshk onekk valobashi. Amder deshe onk uthsob hoy';
+
+bd2 = bd2.toLowerCase();
+let vowals = ['a', 'e', 'i', 'o', 'u'];
+let allHasVowals = true;
+for (let v of vowals) {
+  if (!bd2.includes(v)) {
+    allHasVowals = false;
+    break;
   }
 }
-console.log(count);
+console.log(allHasVowals);
