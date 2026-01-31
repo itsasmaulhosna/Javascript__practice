@@ -1,10 +1,10 @@
 // 1
-// const color = ['red', 'blue', 'green', 'yellow', 'orange'];
-// const reverse = [];
-// for (const n of color) {
-//   reverse.unshift(n);
-// }
-// console.log(reverse);
+const color = ['red', 'blue', 'green', 'yellow', 'orange'];
+const reverse = [];
+for (const n of color) {
+  reverse.unshift(n);
+}
+console.log(reverse);
 
 // 2
 const numbers = [12, 98, 5, 41, 23, 78, 46];
@@ -21,3 +21,14 @@ const statement = 'I am a hard working person';
 const statementArr = statement.split(' ');
 const reverseArr = statementArr.reverse().join(' ');
 console.log(reverseArr);
+
+// 4
+const orginal = [1, 2, 3];
+const copy = [];
+
+for (let i = 0; i < orginal.length; i++) {
+  copy.push(orginal[i]);
+  copy[0] = 99;
+}
+console.log(orginal);
+console.log(copy);
