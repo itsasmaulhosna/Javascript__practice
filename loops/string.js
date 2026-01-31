@@ -27,15 +27,25 @@
 // console.log(allHasVowals);
 
 // 4
-let string = 'Aj amder exam hbe. Xm e vlo mark pete hbe';
-let newString = '';
-for (i = 0; i < string.length; i++) {
-  if (string[i] === 'x') {
-    newString += 'y';
-  } else if (string[i] === 'X') {
-    newString += 'Y';
-  } else {
-    newString += string[i];
-  }
+// let string = 'Aj amder exam hbe. Xm e vlo mark pete hbe';
+// let newString = '';
+// for (i = 0; i < string.length; i++) {
+//   if (string[i] === 'x') {
+//     newString += 'y';
+//   } else if (string[i] === 'X') {
+//     newString += 'Y';
+//   } else {
+//     newString += string[i];
+//   }
+// }
+// console.log(newString);
+
+// 5
+let str = "i am student of mist. i'm learning web deb.";
+let words = str.split(' ');
+let result = '';
+for (let i = 0; i < words.length; i++) {
+  let word = words[i];
+  result += word[0].toUpperCase() + word.slice(1) + ' ';
 }
-console.log(newString);
+console.log(result.trim());
