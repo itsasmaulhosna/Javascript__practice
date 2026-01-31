@@ -15,3 +15,9 @@ for (i = 0; i < numbers.length; i++) {
   }
 }
 console.log(evenNumber);
+
+// 3
+const statement = 'I am a hard working person';
+const statementArr = statement.split(' ');
+const reverseArr = statementArr.reverse().join(' ');
+console.log(reverseArr);
