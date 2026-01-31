@@ -20,7 +20,7 @@ console.log(evenNumber);
 const statement = 'I am a hard working person';
 const statementArr = statement.split(' ');
 const reverseArr = statementArr.reverse().join(' ');
-console.log(reverseArr);
+console.log(`'${reverseArr}'`);
 
 // 4
 const orginal = [1, 2, 3];
@@ -32,3 +32,8 @@ for (let i = 0; i < orginal.length; i++) {
 }
 console.log(orginal);
 console.log(copy);
+
+// 5
+var number = ['Tom', 'Tim', 'Tin', 'Tik'];
+var result = number.join('');
+console.log(`'${result}'`);
