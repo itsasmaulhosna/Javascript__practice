@@ -7,67 +7,75 @@
 // sum(1, 2, 3, 4, 5);
 
 // 2
-function square(number) {
-  const borgo = number * number;
-  console.log('the square of number is :', borgo);
-}
-square(7);
+// function square(number) {
+//   const borgo = number * number;
+//   console.log('the square of number is :', borgo);
+// }
+// square(7);
 
 // 3
 // even
-function isEven(number) {
-  if (number % 2 === 0) {
-    return true;
-  } else {
-    return false;
-  }
-}
-console.log(isEven(65));
-console.log(isEven(54));
+// function isEven(number) {
+//   if (number % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isEven(65));
+// console.log(isEven(54));
 
 // odd
-function isOdd(number) {
-  if (number % 2 === 1) {
-    return true;
-  } else {
-    return false;
-  }
-}
-console.log(isOdd(78));
-console.log(isOdd(9));
+// function isOdd(number) {
+//   if (number % 2 === 1) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isOdd(78));
+// console.log(isOdd(9));
 
 // 4
-function evenSize(number) {
-  console.log(number);
-  const size = number.length;
-  console.log(size);
-  if (size % 2 === 0) {
-    console.log('even size');
-  } else {
-    console.log('odd size');
-  }
-}
-evenSize('Dhaka');
-evenSize('Baka');
-evenSize('Faka');
+// function evenSize(number) {
+//   console.log(number);
+//   const size = number.length;
+//   console.log(size);
+//   if (size % 2 === 0) {
+//     console.log('even size');
+//   } else {
+//     console.log('odd size');
+//   }
+// }
+// evenSize('Dhaka');
+// evenSize('Baka');
+// evenSize('Faka');
 
 // 5
-function numberOfElement(numbers) {
-  const size = numbers.length;
-  return size;
-}
-const arr = numberOfElement([12, 43, 5, 7, 34, 9]);
-console.log(arr);
+// function numberOfElement(numbers) {
+//   const size = numbers.length;
+//   return size;
+// }
+// const arr = numberOfElement([12, 43, 5, 7, 34, 9]);
+// console.log(arr);
 
 // 6
-function sumofArray(numbers) {
-  let sum = 0;
-  for (let number of numbers) {
-    console.log(number);
-    sum = sum + number;
-  }
-  return sum;
+// function sumofArray(numbers) {
+//   let sum = 0;
+//   for (let number of numbers) {
+//     console.log(number);
+//     sum = sum + number;
+//   }
+//   return sum;
+// }
+// const numb = [23, 4, 56, 32, 76, 8, 98];
+// const sum = sumofArray(numb);
+// console.log('sum of numbers is:', sum);
+
+// 7
+function multiplication(num1, num2, num3, num4) {
+  const result = num1 * num2 * num3 * num4;
+  return result;
 }
-const numb = [23, 4, 56, 32, 76, 8, 98];
-const sum = sumofArray(numb);
-console.log('sum of numbers is:', sum);
+const mult = multiplication(2, 3, 5, 8);
+console.log('the multi is:', mult);
