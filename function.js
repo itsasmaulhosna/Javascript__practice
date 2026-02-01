@@ -1,10 +1,10 @@
 // 1
-function sum(a, b, c, d, e) {
-  console.log(a, b, c, d, e);
-  const total = a + b + c + d + e;
-  console.log(total);
-}
-sum(1, 2, 3, 4, 5);
+// function sum(a, b, c, d, e) {
+//   console.log(a, b, c, d, e);
+//   const total = a + b + c + d + e;
+//   console.log(total);
+// }
+// sum(1, 2, 3, 4, 5);
 
 // 2
 function square(number) {
@@ -58,3 +58,16 @@ function numberOfElement(numbers) {
 }
 const arr = numberOfElement([12, 43, 5, 7, 34, 9]);
 console.log(arr);
+
+// 6
+function sumofArray(numbers) {
+  let sum = 0;
+  for (let number of numbers) {
+    console.log(number);
+    sum = sum + number;
+  }
+  return sum;
+}
+const numb = [23, 4, 56, 32, 76, 8, 98];
+const sum = sumofArray(numb);
+console.log('sum of numbers is:', sum);
