@@ -230,11 +230,11 @@ let bike = {
 
 // function
 // square
-function square(number) {
-  const borgo = number * number;
-  console.log('the square of number is :', borgo);
-}
-square(7);
+// function square(number) {
+//   const borgo = number * number;
+//   console.log('the square of number is :', borgo);
+// }
+// square(7);
 
 // sum
 // function sum(a, b, c, d, e) {

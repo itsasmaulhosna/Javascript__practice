@@ -12,3 +12,26 @@ function square(number) {
   console.log('the square of number is :', borgo);
 }
 square(7);
+
+// 3
+// even
+function isEven(number) {
+  if (number % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isEven(65));
+console.log(isEven(54));
+
+// odd
+function isOdd(number) {
+  if (number % 2 === 1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isOdd(78));
+console.log(isOdd(9));
