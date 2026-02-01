@@ -73,9 +73,22 @@
 // console.log('sum of numbers is:', sum);
 
 // 7
-function multiplication(num1, num2, num3, num4) {
-  const result = num1 * num2 * num3 * num4;
+// function multiplication(num1, num2, num3, num4) {
+//   const result = num1 * num2 * num3 * num4;
+//   return result;
+// }
+// const mult = multiplication(2, 3, 5, 8);
+// console.log('the multi is:', mult);
+
+// 8
+function EvenOdd(number) {
+  let result;
+  if (number % 2 === 1) {
+    result = number * 2;
+  } else {
+    result = number / 2;
+  }
   return result;
 }
-const mult = multiplication(2, 3, 5, 8);
-console.log('the multi is:', mult);
+const num = EvenOdd(6);
+console.log('the result is:', num);
