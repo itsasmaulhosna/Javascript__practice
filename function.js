@@ -35,3 +35,18 @@ function isOdd(number) {
 }
 console.log(isOdd(78));
 console.log(isOdd(9));
+
+// 4
+function evenSize(number) {
+  console.log(number);
+  const size = number.length;
+  console.log(size);
+  if (size % 2 === 0) {
+    console.log('even size');
+  } else {
+    console.log('odd size');
+  }
+}
+evenSize('Dhaka');
+evenSize('Baka');
+evenSize('Faka');
