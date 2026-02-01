@@ -50,3 +50,11 @@ function evenSize(number) {
 evenSize('Dhaka');
 evenSize('Baka');
 evenSize('Faka');
+
+// 5
+function numberOfElement(numbers) {
+  const size = numbers.length;
+  return size;
+}
+const arr = numberOfElement([12, 43, 5, 7, 34, 9]);
+console.log(arr);
