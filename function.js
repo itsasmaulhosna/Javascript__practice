@@ -107,3 +107,17 @@ function make_avr(numbers) {
 const array = [12, 34, 54, 67, 87];
 const avr = make_avr(array);
 console.log('The average is:', avr);
+
+// 10
+function even_odd(number) {
+  if (number % 2 === 0) {
+    return 'even';
+  } else {
+    return 'odd';
+  }
+}
+const num1 = even_odd(35);
+const num2 = even_odd(14);
+const num3 = even_odd(76);
+const num4 = even_odd(97);
+console.log(num1, num2, num3, num4);
