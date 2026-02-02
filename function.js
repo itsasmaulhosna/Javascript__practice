@@ -121,3 +121,18 @@ const num2 = even_odd(14);
 const num3 = even_odd(76);
 const num4 = even_odd(97);
 console.log(num1, num2, num3, num4);
+
+// 11
+function count_zero(binaryString) {
+  let count = 0;
+  for (let number of binaryString) {
+    if (number === '0') {
+      count++;
+    }
+  }
+  return count;
+}
+const str1 = count_zero('11001011001');
+const str2 = count_zero('10110010');
+const str3 = count_zero('0001101');
+console.log(str1, str2, str3);
