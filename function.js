@@ -92,3 +92,18 @@ function EvenOdd(number) {
 }
 const num = EvenOdd(6);
 console.log('the result is:', num);
+
+// 9
+function make_avr(numbers) {
+  let sum = 0;
+  for (let number of numbers) {
+    sum = sum + number;
+  }
+  let size = numbers.length;
+  console.log(sum, size);
+  const average = sum / size;
+  return average;
+}
+const array = [12, 34, 54, 67, 87];
+const avr = make_avr(array);
+console.log('The average is:', avr);
