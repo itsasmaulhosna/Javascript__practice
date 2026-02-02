@@ -7,15 +7,19 @@ const maya = inchTofeet(64);
 console.log(maya);
 
 // 2
-// function mileTokilo(mile) {
-//   const kilo = mile * 1.60934;
-//   return kilo;
-// }
+function mileTokilo(mile) {
+  const kilo = mile * 1.60934;
+  return kilo;
+}
+const ans = mileTokilo(234);
+console.log(ans);
 
-// function kiloTomile(kilo) {
-//   const mile = kilo * 0.62134;
-//   return mile;
-// }
+function kiloTomile(kilo) {
+  const mile = kilo * 0.62134;
+  return mile;
+}
+const ans2 = mileTokilo(675);
+console.log(ans2);
 
 // 3 leap year
 
