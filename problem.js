@@ -49,26 +49,26 @@ const leap4 = isLeapyear2(2052);
 console.log(leap1, leap2, leap3, leap4);
 
 // 4
-// function oddAver(numbers) {
-//   const odd = [];
-//   for (let number of numbers) {
-//     if (number % 2 === 1) {
-//       odd.push(number);
-//     }
-//   }
-//   //   console.log(odd);
-//   let sum = 0;
-//   for (let number of odd) {
-//     sum = sum + number;
-//   }
-//   let size = odd.length;
-//   console.log(sum, size);
-//   const avr = sum / size;
-//   return avr;
-// }
-// const num = [12, 34, 54, 56, 65, 35, 13];
-// const avr = oddAver(num);
-// console.log('the average is :', avr);
+function oddAver(numbers) {
+  const odd = [];
+  for (let number of numbers) {
+    if (number % 2 === 1) {
+      odd.push(number);
+    }
+  }
+  //   console.log(odd);
+  let sum = 0;
+  for (let number of odd) {
+    sum = sum + number;
+  }
+  let size = odd.length;
+  console.log(sum, size);
+  const avr = sum / size;
+  return avr;
+}
+const num = [12, 34, 54, 56, 65, 35, 13];
+const avr = oddAver(num);
+console.log('the average is :', avr);
 
 // // 5
 // const array = [1, 3, 1, 4, 2, 3, 5, 7, 5, 4];
