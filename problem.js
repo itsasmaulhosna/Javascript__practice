@@ -86,15 +86,15 @@ console.log(numb);
 
 // // 6
 
-// const max = Math.max(12, 445, 65, 877, 34, 56, 98);
-// console.log(max);
-// console.log(Math.PI);
-// console.log(Math.round(2.87));
-// console.log(Math.abs(-48));
-// console.log(Math.floor(2.99));
-// console.log(Math.ceil(2.01));
-// const ran = Math.round(Math.random() * 10);
-// console.log(ran);
+const max = Math.max(12, 445, 65, 877, 34, 56, 98);
+console.log(max);
+console.log(Math.PI);
+console.log(Math.round(2.87));
+console.log(Math.abs(-48));
+console.log(Math.floor(2.99));
+console.log(Math.ceil(2.01));
+const ran = Math.round(Math.random() * 10);
+console.log(ran);
 
 // // 7
 
