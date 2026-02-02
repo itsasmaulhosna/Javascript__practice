@@ -71,18 +71,18 @@ const avr = oddAver(num);
 console.log('the average is :', avr);
 
 // // 5
-// const array = [1, 3, 1, 4, 2, 3, 5, 7, 5, 4];
-// function noDuplicate(numbers) {
-//   const unique = [];
-//   for (let items of numbers) {
-//     if (unique.includes(items) === false) {
-//       unique.push(items);
-//     }
-//   }
-//   return unique;
-// }
-// const numb = noDuplicate(array);
-// console.log(numb);
+const array = [1, 3, 1, 4, 2, 3, 5, 7, 5, 4];
+function noDuplicate(numbers) {
+  const unique = [];
+  for (let items of numbers) {
+    if (unique.includes(items) === false) {
+      unique.push(items);
+    }
+  }
+  return unique;
+}
+const numb = noDuplicate(array);
+console.log(numb);
 
 // // 6
 
