@@ -112,8 +112,42 @@ console.log(x, y);
 [x, y] = [y, x];
 console.log(x, y);
 
-for (var i = 0; i < 5; i++) {
-  setTimeout(function () {
-    console.log(i);
-  }, 100);
+// for (var i = 0; i < 5; i++) {
+//   setTimeout(function () {
+//     console.log(i);
+//   }, 100);
+// }
+
+// 8
+function getMax(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
 }
+const number = getMax(76, 87);
+console.log('the number is:', number);
+
+const jim = 345;
+const tim = 234;
+const him = 987;
+if (jim > tim && jim > him) {
+  console.log('jim get it');
+} else if (tim > jim && tim > him) {
+  console.log('tim get it');
+} else {
+  console.log('him get it');
+}
+
+function getMax2(num1, num2, num3) {
+  if (num1 > num2 && num1 > num3) {
+    return num1;
+  } else if (num2 > num1 && num2 > num3) {
+    return num2;
+  } else {
+    return num3;
+  }
+}
+const number2 = getMax2(235, 876, 904);
+console.log('the max number is:', number2);
