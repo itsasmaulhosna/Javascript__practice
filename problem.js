@@ -23,30 +23,30 @@ console.log(ans2);
 
 // 3 leap year
 
-// function isLeapyear(year) {
-//   if (year % 4 === 0) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
-// const leap = isLeapyear(2045);
-// console.log(leap);
+function isLeapyear(year) {
+  if (year % 4 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+const leap = isLeapyear(2045);
+console.log(leap);
 
-// function isLeapyear2(year) {
-//   if (year % 100 !== 0 && year % 4 === 0) {
-//     return true;
-//   } else if (year % 100 === 0 && year % 400 === 0) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
-// const leap1 = isLeapyear2(2308);
-// const leap2 = isLeapyear2(2400);
-// const leap3 = isLeapyear2(2100);
-// const leap4 = isLeapyear2(2052);
-// console.log(leap1, leap2, leap3, leap4);
+function isLeapyear2(year) {
+  if (year % 100 !== 0 && year % 4 === 0) {
+    return true;
+  } else if (year % 100 === 0 && year % 400 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+const leap1 = isLeapyear2(2308);
+const leap2 = isLeapyear2(2400);
+const leap3 = isLeapyear2(2100);
+const leap4 = isLeapyear2(2052);
+console.log(leap1, leap2, leap3, leap4);
 
 // 4
 // function oddAver(numbers) {
