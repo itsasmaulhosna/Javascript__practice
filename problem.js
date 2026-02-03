@@ -215,3 +215,21 @@ function getCheapest(mobile) {
 
 const cheap = getCheapest(phone);
 console.log(cheap);
+
+const phones = [
+  { name: 'Samsung', price: 30000, camera: '12mp', color: 'black' },
+  { name: 'Xaomi', price: 20000, camera: '12mp', color: 'black' },
+  { name: 'Oppo', price: 50000, camera: '12mp', color: 'black' },
+  { name: 'Iphone', price: 100000, camera: '12mp', color: 'black' },
+];
+function getHeigst(mobiles) {
+  let high = mobiles[0];
+  for (let num of mobiles) {
+    if (num.price > high.price) {
+      high = num;
+    }
+  }
+  return high;
+}
+const heighst = getHeigst(phones);
+console.log(heighst);
