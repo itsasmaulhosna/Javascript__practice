@@ -196,3 +196,22 @@ const wood = woodQuantity(2, 4, 3);
 console.log(wood);
 
 // 11
+const phone = [
+  { name: 'Samsung', price: 30000, camera: '12mp', color: 'black' },
+  { name: 'Xaomi', price: 20000, camera: '12mp', color: 'black' },
+  { name: 'Oppo', price: 50000, camera: '12mp', color: 'black' },
+  { name: 'Iphone', price: 100000, camera: '12mp', color: 'black' },
+];
+
+function getCheapest(mobile) {
+  let min = mobile[0];
+  for (let phn of mobile) {
+    if (phn.price < min.price) {
+      min = phn;
+    }
+  }
+  return min;
+}
+
+const cheap = getCheapest(phone);
+console.log(cheap);
