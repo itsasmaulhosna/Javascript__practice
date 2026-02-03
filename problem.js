@@ -167,18 +167,18 @@ function getMax3(numbers) {
 const arr = getMax3(heights);
 console.log('the max number is', arr);
 
-// const lowest = [12, 5, 8, 3, 7, 9, 35];
-// function getLow(number) {
-//   let min = number[0];
-//   for (let value of number) {
-//     if (value < min) {
-//       min = value;
-//     }
-//   }
-//   return min;
-// }
-// const arr2 = getLow(lowest);
-// console.log('lowest value is:', arr2);
+const lowest = [12, 5, 8, 3, 7, 9, 35];
+function getLow(number) {
+  let min = number[0];
+  for (let value of number) {
+    if (value < min) {
+      min = value;
+    }
+  }
+  return min;
+}
+const arr2 = getLow(lowest);
+console.log('lowest value is:', arr2);
 
 // 10
 // function woodQuantity(chairQuantity, tableQuantity, bedQuantity) {
