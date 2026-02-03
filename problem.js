@@ -181,18 +181,18 @@ const arr2 = getLow(lowest);
 console.log('lowest value is:', arr2);
 
 // 10
-// function woodQuantity(chairQuantity, tableQuantity, bedQuantity) {
-//   const perChairWood = 5;
-//   const perTablerWood = 15;
-//   const perBedWood = 25;
+function woodQuantity(chairQuantity, tableQuantity, bedQuantity) {
+  const perChairWood = 5;
+  const perTablerWood = 15;
+  const perBedWood = 25;
 
-//   const chairTotalWood = chairQuantity * perChairWood;
-//   const tableTotalWood = tableQuantity * perTablerWood;
-//   const bedTotalWood = bedQuantity * perBedWood;
-//   const totalWood = chairTotalWood + tableTotalWood + bedTotalWood;
-//   return totalWood;
-// }
-// const wood = woodQuantity(2, 4, 3);
-// console.log(wood);
+  const chairTotalWood = chairQuantity * perChairWood;
+  const tableTotalWood = tableQuantity * perTablerWood;
+  const bedTotalWood = bedQuantity * perBedWood;
+  const totalWood = chairTotalWood + tableTotalWood + bedTotalWood;
+  return totalWood;
+}
+const wood = woodQuantity(2, 4, 3);
+console.log(wood);
 
 // 11
