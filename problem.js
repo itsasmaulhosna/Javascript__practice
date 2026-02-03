@@ -151,3 +151,48 @@ function getMax2(num1, num2, num3) {
 }
 const number2 = getMax2(235, 876, 904);
 console.log('the max number is:', number2);
+
+// 9
+
+const heights = [98, 54, 76, 99, 23, 87];
+function getMax3(numbers) {
+  let max = numbers[0];
+  for (const num of numbers) {
+    if (num > max) {
+      max = num;
+    }
+  }
+  return max;
+}
+const arr = getMax3(heights);
+console.log('the max number is', arr);
+
+// const lowest = [12, 5, 8, 3, 7, 9, 35];
+// function getLow(number) {
+//   let min = number[0];
+//   for (let value of number) {
+//     if (value < min) {
+//       min = value;
+//     }
+//   }
+//   return min;
+// }
+// const arr2 = getLow(lowest);
+// console.log('lowest value is:', arr2);
+
+// 10
+// function woodQuantity(chairQuantity, tableQuantity, bedQuantity) {
+//   const perChairWood = 5;
+//   const perTablerWood = 15;
+//   const perBedWood = 25;
+
+//   const chairTotalWood = chairQuantity * perChairWood;
+//   const tableTotalWood = tableQuantity * perTablerWood;
+//   const bedTotalWood = bedQuantity * perBedWood;
+//   const totalWood = chairTotalWood + tableTotalWood + bedTotalWood;
+//   return totalWood;
+// }
+// const wood = woodQuantity(2, 4, 3);
+// console.log(wood);
+
+// 11
