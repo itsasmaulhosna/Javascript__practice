@@ -233,3 +233,21 @@ function getHeigst(mobiles) {
 }
 const heighst = getHeigst(phones);
 console.log(heighst);
+
+// 12
+const products = [
+  { name: 'shampoo', price: 350 },
+  { name: 'cream', price: 180 },
+  { name: 'lotion', price: 450 },
+  { name: 'meril', price: 100 },
+];
+
+function getShoppingTotal(products) {
+  let sum = 0;
+  for (let product of products) {
+    sum = sum + product.price;
+  }
+  return sum;
+}
+const total = getShoppingTotal(products);
+console.log(total);
