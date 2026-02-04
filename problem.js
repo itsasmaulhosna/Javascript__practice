@@ -267,3 +267,37 @@ function discountQuantity(quantity) {
 }
 const discount = discountQuantity(50);
 console.log('total cost is:', discount);
+
+// 14
+function add(num1, num2) {
+  return num1 + num2;
+}
+function substract(num1, num2) {
+  return num1 - num2;
+}
+function multiplication(num1, num2) {
+  return num1 * num2;
+}
+function divided(num1, num2) {
+  return num1 / num2;
+}
+function calculator(a, b, operator) {
+  if (operator === add) {
+    const result = add(a, b);
+    return result;
+  } else if (operator === substract) {
+    const result = substract(a, b);
+    return result;
+  } else if (operator === multiplication) {
+    const result = multiplication(a, b);
+    return result;
+  } else if (operator === divided) {
+    const result = divided(a, b);
+    return result;
+  } else {
+    return 'operation is not allowed';
+  }
+}
+
+const calculation = calculator(5, 7, multiplication);
+console.log('the calculation is:', calculation);
