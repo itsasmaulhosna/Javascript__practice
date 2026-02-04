@@ -251,3 +251,19 @@ function getShoppingTotal(products) {
 }
 const total = getShoppingTotal(products);
 console.log(total);
+
+// 13
+function discountQuantity(quantity) {
+  if (quantity <= 100) {
+    const total = quantity * 100;
+    return total;
+  } else if (quantity <= 200) {
+    const total = quantity * 90;
+    return total;
+  } else {
+    const total = quantity * 70;
+    return total;
+  }
+}
+const discount = discountQuantity(50);
+console.log('total cost is:', discount);
