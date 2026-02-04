@@ -301,3 +301,16 @@ function calculator(a, b, operator) {
 
 const calculation = calculator(5, 7, multiplication);
 console.log('the calculation is:', calculation);
+
+// 15
+function fullname(first, second) {
+  if (typeof first !== 'string') {
+    return 'first should be a string';
+  } else if (typeof second !== 'string') {
+    return 'second should be a string';
+  }
+  const full = first + ' ' + second;
+  return full;
+}
+const name2 = fullname(5, 'mita');
+console.log(name2);
