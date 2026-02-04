@@ -314,3 +314,14 @@ function fullname(first, second) {
 }
 const name2 = fullname(5, 'mita');
 console.log(name2);
+
+// 16
+function getArray(numbers) {
+  if (Array.isArray(numbers) === false) {
+    return 'please provide an array';
+  }
+  const second = numbers[1];
+  return second;
+}
+const number_array = getArray([12, 76, 34, 56, 45]);
+console.log(number_array);
