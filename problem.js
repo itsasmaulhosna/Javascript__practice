@@ -348,3 +348,19 @@ function find(numbers, check) {
 const number_arr = [5, 6, 11, 12, 98, 5];
 const numbers = find(number_arr, 5);
 console.log(numbers);
+
+// 19 count number of vowal in function
+function countVowal(word, vowal) {
+  let count = 0;
+  for (let ch of word) {
+    if (vowal.includes(ch)) {
+      count++;
+    }
+  }
+  return count;
+}
+const vowals = ['a', 'e', 'i', 'o', 'u'];
+let str = 'Aswaelsojhuiavcouieai';
+str = str.toLowerCase();
+const string = countVowal(str, vowals);
+console.log(string);
