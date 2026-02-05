@@ -364,3 +364,18 @@ let str = 'Aswaelsojhuiavcouieai';
 str = str.toLowerCase();
 const string = countVowal(str, vowals);
 console.log(string);
+
+// 20 find largest word
+function largestWord(string) {
+  let words = string.split(' ');
+  let longWord = '';
+  for (let word of words) {
+    if (word.length > longWord.length) {
+      longWord = word;
+    }
+  }
+  return longWord;
+}
+const sentence = 'I am learning Programming to become a programmer';
+const st = largestWord(sentence);
+console.log('the largest word is:', st);
