@@ -325,3 +325,12 @@ function getArray(numbers) {
 }
 const number_array = getArray([12, 76, 34, 56, 45]);
 console.log(number_array);
+
+// 17
+// from celcius to fahrenhit
+function celToFer(celcius) {
+  let fahrenhit = (celcius * 9) / 5 + 32;
+  return fahrenhit;
+}
+let celcius = celToFer(10);
+console.log(celcius);
