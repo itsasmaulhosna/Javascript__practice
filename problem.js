@@ -334,3 +334,17 @@ function celToFer(celcius) {
 }
 let celcius = celToFer(10);
 console.log(celcius);
+
+// 18 find number
+function find(numbers, check) {
+  let count = 0;
+  for (let item of numbers) {
+    if (item == check) {
+      count++;
+    }
+  }
+  return count;
+}
+const number_arr = [5, 6, 11, 12, 98, 5];
+const numbers = find(number_arr, 5);
+console.log(numbers);
