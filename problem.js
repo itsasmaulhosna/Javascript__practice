@@ -93,8 +93,8 @@ console.log(Math.round(2.87));
 console.log(Math.abs(-48));
 console.log(Math.floor(2.99));
 console.log(Math.ceil(2.01));
-const ran = Math.round(Math.random() * 10);
-console.log(ran);
+// const ran = Math.round(Math.random() * 10);
+// console.log(ran);
 
 // // 7
 
@@ -379,3 +379,14 @@ function largestWord(string) {
 const sentence = 'I am learning Programming to become a programmer';
 const st = largestWord(sentence);
 console.log('the largest word is:', st);
+
+// 21
+// const ran = Math.floor(Math.random() * 11) + 10;
+// console.log(ran);
+
+function randomNumber(max, min) {
+  let result = Math.floor(Math.random() * 11) + 10;
+  return result;
+}
+let ran = randomNumber(20, 10);
+console.log('the random number is ', ran);
