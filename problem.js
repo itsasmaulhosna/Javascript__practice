@@ -390,3 +390,62 @@ function randomNumber(max, min) {
 }
 let ran = randomNumber(20, 10);
 console.log('the random number is ', ran);
+
+// 22 find lowest number in array
+function findLowest(numbers) {
+  let lowest = numbers[0];
+  for (let number of numbers) {
+    if (number < lowest) {
+      lowest = number;
+    }
+  }
+  return lowest;
+}
+const heights2 = [167, 190, 120, 165, 137];
+const low = findLowest(heights2);
+console.log(low);
+
+// 23 smallest name
+// function findSmallest(names) {
+//   let smallest = names[0];
+//   for (let name of names) {
+//     if (name.length < smallest.length) {
+//       smallest = name;
+//     }
+//   }
+//   return smallest;
+// }
+// const heights3 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+// const small = findSmallest(heights3);
+// console.log(small);
+
+// 24 total price
+// function totalCost(prices) {
+//   let sum = 0;
+//   for (let price of prices) {
+//     sum = sum + price;
+//   }
+//   return sum;
+// }
+// const laptop = 35000;
+// const tablet = 15000;
+// const mobile = 20000;
+// const totalPrice = totalCost([laptop, tablet, mobile]);
+// console.log(totalPrice);
+
+// 25 word count
+// function wordCount(sentence) {
+//   let words = sentence.split(' ');
+//   let wordObj = {};
+//   for (let word of words) {
+//     let wordCase = word.toLowerCase();
+//     if (wordObj.hasOwnProperty(wordCase)) {
+//       wordObj[wordCase]++;
+//     } else {
+//       wordObj[wordCase] = 1;
+//     }
+//   }
+//   return wordObj;
+// }
+// let output = wordCount('I love JS and I love coding and JS is fun Fun fUn');
+// console.log(output);
