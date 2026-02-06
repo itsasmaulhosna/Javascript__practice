@@ -434,18 +434,18 @@ const totalPrice = totalCost([laptop, tablet, mobile]);
 console.log(totalPrice);
 
 // 25 word count
-// function wordCount(sentence) {
-//   let words = sentence.split(' ');
-//   let wordObj = {};
-//   for (let word of words) {
-//     let wordCase = word.toLowerCase();
-//     if (wordObj.hasOwnProperty(wordCase)) {
-//       wordObj[wordCase]++;
-//     } else {
-//       wordObj[wordCase] = 1;
-//     }
-//   }
-//   return wordObj;
-// }
-// let output = wordCount('I love JS and I love coding and JS is fun Fun fUn');
-// console.log(output);
+function wordCount(sentence) {
+  let words = sentence.split(' ');
+  let wordObj = {};
+  for (let word of words) {
+    let wordCase = word.toLowerCase();
+    if (wordObj.hasOwnProperty(wordCase)) {
+      wordObj[wordCase]++;
+    } else {
+      wordObj[wordCase] = 1;
+    }
+  }
+  return wordObj;
+}
+let output = wordCount('I love JS and I love coding and JS is fun Fun fUn');
+console.log(output);
