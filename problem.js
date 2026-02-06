@@ -449,3 +449,49 @@ function wordCount(sentence) {
 }
 let output = wordCount('I love JS and I love coding and JS is fun Fun fUn');
 console.log(output);
+
+// 26 marks analysis
+
+function analyzeMarks(marksObj) {
+  let total = 0;
+  let heighstMark = -Infinity;
+  let lowestMark = +Infinity;
+  let heighstSubject = null;
+  let lowestSubject = null;
+  let average = 0;
+
+  for (let subject in marksObj) {
+    let mark = marksObj[subject];
+    // console.log(key, ':', marksObj[key]);
+    total = total + mark;
+    average = total / Object.keys(marksObj).length;
+    // object.keys(marksObj) gives us an array of keys in the marksObj, and we can get the length of that array to find out how many subjects there are.
+    if (mark > heighstMark) {
+      heighstMark = mark;
+      heighstSubject = subject;
+    }
+    if (mark < lowestMark) {
+      lowestMark = mark;
+      lowestSubject = subject;
+    }
+  }
+
+  let result = {
+    total: total,
+    average: average,
+    heighstMark: heighstMark,
+    lowestMark: lowestMark,
+    heighstSubject: heighstSubject,
+    lowestSubject: lowestSubject,
+  };
+  return result;
+}
+
+let result = analyzeMarks({
+  math: 78,
+  english: 65,
+  physics: 88,
+  bangla: 55,
+  biology: 99,
+});
+console.log(result);
