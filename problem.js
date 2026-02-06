@@ -420,18 +420,18 @@ const small = findSmallest(heights3);
 console.log(small);
 
 // 24 total price
-// function totalCost(prices) {
-//   let sum = 0;
-//   for (let price of prices) {
-//     sum = sum + price;
-//   }
-//   return sum;
-// }
-// const laptop = 35000;
-// const tablet = 15000;
-// const mobile = 20000;
-// const totalPrice = totalCost([laptop, tablet, mobile]);
-// console.log(totalPrice);
+function totalCost(prices) {
+  let sum = 0;
+  for (let price of prices) {
+    sum = sum + price;
+  }
+  return sum;
+}
+const laptop = 35000;
+const tablet = 15000;
+const mobile = 20000;
+const totalPrice = totalCost([laptop, tablet, mobile]);
+console.log(totalPrice);
 
 // 25 word count
 // function wordCount(sentence) {
