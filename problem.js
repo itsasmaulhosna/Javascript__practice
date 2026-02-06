@@ -495,3 +495,45 @@ let result = analyzeMarks({
   biology: 99,
 });
 console.log(result);
+
+// 27 passoward checker
+function checkPassword(password) {
+  let isValid;
+  let reasons = [];
+  let hasSpace = password.includes(' ');
+  let length = password.length;
+  let hasUppercase = false;
+  let hasNumber = false;
+  for (let i = 0; i < length; i++) {
+    let ch = password[i];
+    if (ch >= '0' && ch <= '9') {
+      hasNumber = true;
+    }
+    if (ch >= 'A' && ch <= 'Z') {
+      hasUppercase = true;
+    }
+  }
+  if (!hasNumber) {
+    reasons.push('Password must contain at least one number.');
+  }
+  if (!hasUppercase) {
+    reasons.push('Password must contain at least one uppercase letter.');
+  }
+  if (hasSpace) {
+    reasons.push('Password must not contain spaces.');
+  }
+
+  if (reasons.length === 0) {
+    isValid = true;
+  } else {
+    isValid = false;
+  }
+  return {
+    isValid,
+    reasons,
+  };
+}
+let output1 = checkPassword('helloworld');
+let output2 = checkPassword('Hello123');
+
+console.log(output1, output2);
