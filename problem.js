@@ -406,18 +406,18 @@ const low = findLowest(heights2);
 console.log(low);
 
 // 23 smallest name
-// function findSmallest(names) {
-//   let smallest = names[0];
-//   for (let name of names) {
-//     if (name.length < smallest.length) {
-//       smallest = name;
-//     }
-//   }
-//   return smallest;
-// }
-// const heights3 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
-// const small = findSmallest(heights3);
-// console.log(small);
+function findSmallest(names) {
+  let smallest = names[0];
+  for (let name of names) {
+    if (name.length < smallest.length) {
+      smallest = name;
+    }
+  }
+  return smallest;
+}
+const heights3 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+const small = findSmallest(heights3);
+console.log(small);
 
 // 24 total price
 // function totalCost(prices) {
