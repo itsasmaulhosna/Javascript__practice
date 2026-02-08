@@ -331,3 +331,17 @@ function sumEven(numbers) {
 numb = [12, 34, 65, 4, 8, 6, 9, 54, 11, 21, 13, 19];
 const total = sumEven(numb);
 console.log(total);
+
+// duplicate remove
+function removeDuplicate(numbers) {
+  let unique = [];
+  for (let number of numbers) {
+    if (!unique.includes(number)) {
+      unique.push(number);
+    }
+  }
+  return unique;
+}
+const array = [5, 3, 5, 2, 3, 9, 2, 7];
+const uniqueArray = removeDuplicate(array);
+console.log(uniqueArray);

@@ -537,3 +537,27 @@ let output1 = checkPassword('helloworld');
 let output2 = checkPassword('Hello123');
 
 console.log(output1, output2);
+
+// 28 shopping bill
+function calcBill(prices, items) {
+  let total = 0;
+  for (let item in prices) {
+    let price = prices[item];
+    console.log(item, ':', price);
+    total = total + price;
+  }
+  let itemCount = {};
+  for (let item of items) {
+    if (itemCount.hasOwnProperty(item)) {
+      itemCount[item]++;
+    } else {
+      itemCount[item] = 1;
+    }
+  }
+  return {
+    total,
+    itemCount,
+  };
+}
+let bill = calcBill({ pen: 10, book: 50 }, ['pen', 'pen', 'book', 'pen']);
+console.log(bill);
